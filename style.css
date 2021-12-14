@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+}
+.white {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.royal {
+  width: 400px;
+  margin-left: 0;
+  margin-right: 0;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid #9e9e9e14;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+
+  box-shadow: 20px 20px 50px grey;
+}
+.content .title {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.content img {
+  width: 400px;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.change {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  width: 350px;
+  background-color: #f8f9fe;
+  border-radius: 20px;
+}
+.change a {
+  color: #382ae1;
+  font-weight: 600;
+  font-size: 14px;
+}
+.change img {
+  width: 45px;
+  height: 45px;
+}
+.ann {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.ann :nth-child(1) {
+  font-weight: 600;
+}
+.ann :nth-child(2) {
+  color: #7e839d;
+}
+.pay {
+  background-color: #382ae1;
+  color: #f4f4fc;
+  height: 50px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.pay h1 {
+  font-size: 10px;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+  color: #878da0;
+}
+.cancel {
+  color: #9e9e9e;
+  font-size: 14px;
+}
+
+.cancel:hover {
+  cursor: pointer;
+}
+
+.change a,
+.pay,
+.cancel :hover {
+  cursor: pointer;
+}
+
+@media screen and (width: 375px) {
+  .content {
+    width: 250px;
+    height: 500px;
+  }
+  .content img {
+    width: 250px;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .royal {
+    width: 200px;
+  }
+}
